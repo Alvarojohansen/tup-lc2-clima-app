@@ -1,4 +1,4 @@
-* {
+*{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -6,7 +6,7 @@
 
 }
 
-:root {
+:root{
     /* Declaro variables CSS con colores principales */
     --color-theme: #00594c;
     --color-active: #5df2d6;
@@ -14,31 +14,30 @@
     --color-gradient: linear-gradient(to right, var(--color-theme), var(--color-back-active));
 }
 
-body {
+body{
     height: 100%;
     width: 100%;
 }
 
-ul {
+ul{
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-button,
-a {
+button, a{
     user-select: none;
     -webkit-user-select: none;
 }
 
-header {
+header{
     position: fixed;
     top: 0;
     width: 100%;
     background: var(--color-theme);
 }
 
-nav>ul {
+nav>ul{
     display: flex;
     justify-content: space-between;
     justify-content: center;
@@ -51,11 +50,11 @@ nav ul li a:hover{
     text-shadow: 2px 2px 3px whitesmoke;
 }
 
-nav li {
+nav li{
     flex: 0 0 auto;
 }
 
-nav li a {
+nav li a{
     display: block;
     padding: 16px 12px;
     text-align: center;
@@ -65,34 +64,34 @@ nav li a {
     color: var(--color-active);
 }
 
-nav li.current-page a {
+nav li.current-page a{
     color: var(--color-theme);
     background-color: var(--color-active);
     pointer-events: none;
     border-radius: 10px;
 }
 
-main {
+main{
     margin-top: 120px;
     overflow: auto;
     padding: 16px;
     padding-bottom: 60px;
     height: calc(100% - 120px);
-    text-align: center;
 }
 
-h1 {
+
+h1{
     text-align: center;
     margin:  0;
     color: white;
 }
 
-h1>img {
+h1>img{
     width: 70px;
     vertical-align: middle;
 }
 
-h2 {
+h2{
     color: var(--color-theme);
     margin: 16px 0;
     text-align: center;
@@ -102,15 +101,19 @@ h3{
     color: var(--color-theme);
     margin: 8px 0;
 }
-div {
-    text-align: center;
-}
-main section {
-    display: flex;
-    justify-content: space-around;
+
+.msj{
+    
+    height: 150px;
 }
 
-footer {
+main section{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+footer{
     position: fixed;
     bottom: 0px;
     background: var(--color-theme);
@@ -128,6 +131,7 @@ footer p {
 main p {
     margin-bottom: 16px;
 }
+
 
 /* Media Query: Estilos a aplicar sólo en pantallas mayores a 400px */
 @media (min-width: 400px) {
