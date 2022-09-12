@@ -25,7 +25,8 @@ ul{
     margin: 0;
 }
 
-button, a{
+button, 
+a{
     user-select: none;
     -webkit-user-select: none;
 }
@@ -79,7 +80,6 @@ main{
     height: calc(100% - 120px);
 }
 
-
 h1{
     text-align: center;
     margin:  0;
@@ -106,7 +106,10 @@ h3{
     
     height: 150px;
 }
-
+.card{
+    align-items: center;
+    text-align: center;
+}
 main section{
     display: flex;
     justify-content: space-around;
