@@ -7,8 +7,11 @@
     box-shadow: 3px 3px 12px;
 
 }
-.boton{
-   
+
+main section img{
+    width: 50%;
+    height: 50%;
+    
 }
 .boton > input{
     background-color:#00594c;
