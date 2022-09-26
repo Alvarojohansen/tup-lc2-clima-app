@@ -1,0 +1,29 @@
+main p{
+    text-align: justify;
+    margin: 20px;
+}
+.formulario{
+    align-items:flex-end;
+
+}
+input.botones{
+    background-color:#00594c;
+    color: white;
+    border-radius: 10px;
+    font-size: 1em;
+    font-style: inherit;
+    padding: 10px;
+    margin: 15px 0 0 15px;
+    
+}
+form label{
+    font-style: unset;
+}
+#email{
+    background-color: #dc3545;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    color: azure;
+    margin: 20px;
+}
