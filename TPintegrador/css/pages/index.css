@@ -1,0 +1,24 @@
+.card{
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 15px;
+    box-shadow: 3px 3px 12px;
+
+}
+.boton{
+   
+}
+.boton > input{
+    background-color:#00594c;
+    color: white;
+    border-radius: 10px;
+    font-size: 1em;
+    font-style: inherit;
+    padding: 4px;
+}
+.boton > select{
+    border-radius: 10px;
+    padding: 5px;
+}
