@@ -26,6 +26,7 @@
             </ul>
         </nav>
     </header>
+    
     <!-- Contenido principal de la página -->
     <main>
         <h2>El Clima Ahora</h2>
@@ -33,22 +34,23 @@
             <!-- Sección donde se debe colocar el formulario, con el select y el botón de consultar -->
             <form action="" class="boton">
                 <!--boton de seleccion -->
-                <select name=" Seleccion " class="boton">
-                    <option value=" 0 "> *Seleccione Ciudad*</option>
-                </select><input type="submit" value="Consultar" >
+                <select name=" Seleccion " id="selector" class="boton" onload="cargarOptions()"">
+                    <option value=" 0 " > *Seleccione Ciudad*</option>
+
+                </select><input onclick="ObtenerDatos()" type="submit" value="Consultar" id="consult">
                  
             </form>
         </section>
         <section id="section-weather-result">
             <!-- Sección donde se debe mostrar el clima de la ciudad -->
              <div class="card" id="card-1">
-               <h3>Rosario</h3>
-               <img src="img/sol.png">
-               <p>Temperatura: 25.31º</p>
-               <p>Sensación térmica: 24.65º</p>
-               <p>Humedad: 29%</p>
-               <p>Velocidad del viento: 4.63km/h</p>
-               <p>Presión: 1011 P</p>
+               <h3 id="ciudad"></h3>
+               <img src="" id="img" width="100px" height="100px">
+               <p id="temperatura"></p>
+               <p id="termica"></p>
+               <p id="humedad"></p>
+               <p id="viento"></p>
+               <p id="presion"></p>
             </div> 
         </section>
     </main>

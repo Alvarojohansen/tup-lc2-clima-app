@@ -90,10 +90,10 @@ h1{
     color: white;
 }
 
-h1>img{
-    width: 70px;
+ h1>img{
+    
     vertical-align: middle;
-}
+} 
 
 h2{
     color: var(--color-theme);
@@ -142,6 +142,7 @@ main p {
 }
 
 
+
 /* Media Query: Estilos a aplicar sólo en pantallas mayores a 400px */
 @media (min-width: 400px) {
     main {
@@ -153,4 +154,28 @@ main p {
         padding-top: 20px;
         padding-bottom: 20px;
     }
+}
+
+
+.loader {
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #fd0303;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 3s linear infinite;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin: 200px 0 0 -25px;
+}
+
+.contenedor{
+    position: relative;
+}
+
+@keyframes spin {
+  0% { transform: rotate(1deg); }
+  100% { transform: rotate(360deg); }
 }
