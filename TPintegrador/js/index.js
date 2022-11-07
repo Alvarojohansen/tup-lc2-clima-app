@@ -54,7 +54,7 @@ let miClima = {
             .catch((error) => console.log(error));
     },
     mostrarDatos: function (data) {
-        //obtener los datos de la ciudad
+        //obtener los datos de la ciudad y los mete en la carta
 
         const { name } = data;
         const { icon, description } = data.weather[0];

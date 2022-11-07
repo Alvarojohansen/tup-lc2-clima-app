@@ -2,7 +2,7 @@
     display: inline-block;
     border: 1px solid black;
     border-radius: 15px;
-    padding: 20px;
+    padding: 45px;
     margin-top: 15px;
     box-shadow: 3px 3px 12px;
     
@@ -27,4 +27,9 @@ button{
 .boton > select{
     border-radius: 10px;
     padding: 5px;
+}
+#selecCiudad{
+    margin-bottom: 5px;
+    padding: 5px;
+    border-radius: 7px;
 }
