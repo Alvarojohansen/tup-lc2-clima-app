@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/pages/index.css">
     <!-- Archivo Js -->
-    <script href="js/common.js" defer></script>
-    <script href="js/index.js" defer></script>
+    <script src="js/common.js" defer></script>
+    <script src="js/index.js" defer></script>
 </head>
 
 <body>
@@ -32,25 +32,25 @@
         <h2>El Clima Ahora</h2>
         <section id="form-city-list">
             <!-- Sección donde se debe colocar el formulario, con el select y el botón de consultar -->
-            <form action="" class="boton">
+            <form>
                 <!--boton de seleccion -->
-                <select name=" Seleccion " id="selector" class="boton" onload="cargarOptions()"">
-                    <option value=" 0 " > *Seleccione Ciudad*</option>
-
-                </select><input onclick="ObtenerDatos()" type="submit" value="Consultar" id="consult">
-                 
+                <select id="selecCiudad" class="boton" onload="agregarCities()">
+                    <option value="0" disabled selected> *Seleccione Ciudad*</option>
+                </select>
+                <button type="button" id="consult">Consultar</button>              
             </form>
         </section>
-        <section id="section-weather-result">
+        <section id="section-weather-result" >
             <!-- Sección donde se debe mostrar el clima de la ciudad -->
-             <div class="card" id="card-1">
-               <h3 id="ciudad"></h3>
-               <img src="" id="img" width="100px" height="100px">
-               <p id="temperatura"></p>
-               <p id="termica"></p>
-               <p id="humedad"></p>
-               <p id="viento"></p>
-               <p id="presion"></p>
+            <div class="card" id="carta">
+               <h3 class="ciudad"></h3>
+               <img src="" alt="" class="imagen">
+               <p class="descripcion"></p>
+               <p class="temperatura"></p>
+               <p class="termica"></p>
+               <p class="humedad"></p>
+               <p class="viento"></p>
+               <p class="presion"></p>
             </div> 
         </section>
     </main>

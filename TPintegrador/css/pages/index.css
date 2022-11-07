@@ -1,4 +1,4 @@
-#card{
+.card{
     display: inline-block;
     border: 1px solid black;
     border-radius: 15px;
@@ -7,13 +7,16 @@
     box-shadow: 3px 3px 12px;
     
 }
-
+.card{
+    align-items: center;
+    text-align: center;
+}
 main section img{
     width: 50%;
     height: 50%;
     
 }
-.boton > input{
+button{
     background-color:#00594c;
     color: white;
     border-radius: 10px;

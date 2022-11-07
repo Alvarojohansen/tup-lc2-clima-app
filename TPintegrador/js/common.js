@@ -1,6 +1,6 @@
 
-//API de clima
 
+//obtiene ciudades del LocalStorage
 
 function getCitiesFromLocalStorage() {
     let cities = localStorage.getItem("CITIES");
